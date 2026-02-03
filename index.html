@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Mrinal Portfolio</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font (optional) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      @keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spinSlow 12s linear infinite;
+}
+</style>
+
+
+  </head>
+  
+
+  <body class="bg-gradient-to-br from-black via-gray-900 to-black pt-20 text-white">
+
+    <!-- Navbar -->
+ <header class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur
+               border-b border-gray-700 z-50">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+
+    <!-- CIRCULAR MM LOGO -->
+    <div class="flex items-center gap-3">
+      <img
+        src="/favicon.png"
+        alt="MM Logo"
+        class="w-10 h-10 rounded-full object-cover
+               border-2 border-blue-500
+               shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+      >
+    </div>
+
+    <!-- Menu -->
+    <ul class="flex gap-6 text-gray-300">
+      <li><a href="#about" class="hover:text-white">About</a></li>
+      <li><a href="#skills" class="hover:text-white">Skills</a></li>
+      <li><a href="#projects" class="hover:text-white">Projects</a></li>
+      <li><a href="#contact" class="hover:text-white">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+  
+
+
+    <!-- Hero Section -->
+    <section
+      class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center"
+    >
+    
+      <div>
+        <p class="text-gray-400 text-lg">Hi, I'm</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mt-2">
+          Mrinal Mondal
+        </h2>
+        <h3 class="text-xl mt-3">Frontend Web Developer</h3>
+
+        <p class="mt-4 text-gray-400">HTML  • CSS • Tailwind CSS • JavaScript</p>
+
+        <button
+          class="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold"
+        >
+          Hire Me
+        </button>
+      </div>
+
+    <div class="flex justify-center md:justify-end">
+  <div class="relative w-64 h-64 md:w-72 md:h-72 flex items-center justify-center">
+
+    <!-- Rotating Gradient Border -->
+    <div
+      class="absolute inset-0 rounded-full
+             bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+             animate-spin-slow blur-[1px]">
+    </div>
+
+    <!-- Inner Dark Ring -->
+    <div class="absolute inset-2 bg-black rounded-full"></div>
+
+    <!-- Photo -->
+    <img
+      src="/MRINAL.png"
+      alt="Mrinal Mondal"
+      class="relative w-56 h-56 md:w-64 md:h-64
+             rounded-full object-cover z-10
+             border-4 border-black
+             shadow-[0_0_40px_rgba(59,130,246,0.4)]
+             transition duration-300 hover:scale-105"
+    >
+  </div>
+</div>
+
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="scroll-mt-24 py-20">
+      <h2 class="text-center text-3xl font-semibold mb-6">About Me</h2>
+      <p class="max-w-3xl mx-auto text-center text-gray-400 px-6">
+        I am a Computer Science & Engineering student (8th Semester). I build
+        responsive and modern websites using HTML, CSS, Tailwind CSS and
+        JavaScript. I am passionate about freelancing and web development.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="scroll-mt-24 py-20">
+  <h2 class="text-4xl font-bold text-center mb-12">My Skills</h2>
+
+  <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-6">
+
+    <!-- HTML -->
+    <div class="bg-gray-800 p-6 rounded-xl text-center
+                hover:scale-105 transition">
+      <img src="/ChatGPT Image Feb 2, 2026, 10_57_07 PM.png"
+           class="w-14 mx-auto mb-3" alt="HTML">
+      <h3 class="font-semibold">HTML</h3>
+    </div>
+
+    <!-- CSS -->
+    <div class="bg-gray-800 p-6 rounded-xl text-center
+                hover:scale-105 transition">
+      <img src="/css-3.png"
+           class="w-14 mx-auto mb-3" alt="CSS">
+      <h3 class="font-semibold">CSS</h3>
+    </div>
+
+    <!-- Tailwind -->
+    <div class="bg-gray-800 p-6 rounded-xl text-center
+                hover:scale-105 transition">
+      <img src="/icons8-tailwind-css-64.png"
+           class="w-14 mx-auto mb-3" alt="Tailwind CSS">
+      <h3 class="font-semibold">Tailwind CSS</h3>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="bg-gray-800 p-6 rounded-xl text-center
+                hover:scale-105 transition">
+      <img src="/java-script.png"
+           class="w-14 mx-auto mb-3" alt="JavaScript">
+      <h3 class="font-semibold">JavaScript</h3>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="scroll-mt-24 py-20">
+      <h2 class="text-center text-3xl font-semibold mb-8">Projects</h2>
+
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-6">
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="font-semibold text-lg">Portfolio Website</h3>
+          <p class="text-gray-400 mt-2">Personal responsive portfolio</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="font-semibold text-lg">Landing Page</h3>
+          <p class="text-gray-400 mt-2">Business landing page design</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 class="font-semibold text-lg">Library Management UI</h3>
+          <p class="text-gray-400 mt-2">Frontend project</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-24 py-20">
+      <h2 class="text-center text-3xl font-semibold mb-6">Contact Me</h2>
+
+      <div class="text-center text-gray-400 space-y-2">
+        <p>Email: mrinalmondal012@gmail.com</p>
+        <p>Phone: 62959775541</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-700 py-4 text-center text-gray-500">
+      © 2026 Mrinal Mondal | Frontend Developer
+    </footer>
+  </body>
+</html>
